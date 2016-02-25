@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+<title>Amazon Products</title>
+</head>
+<body>
+
+
+
+<table>
+<tr>
+<th>ASIN</th>
+<th>Image</th>
+<th>Amount</th>
+<!--
+<th>Binding</th>
+<th>Department</th>
+-->
+</tr>
+
+<% products.forEach(function(product){ %>
+
+<tr>
+<td><%= product.ASIN %></td>
+<td>
+<% product.MediumImage.forEach(function(img){ %>
+	<img src="<%= img.URL %>" >
+<%	}) %>
+</td>
+
+
+
+
+</tr>
+
+<% }) %>
+
+</table>
+
+
+</body>
+</html>
