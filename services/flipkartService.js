@@ -16,7 +16,10 @@
 <%	}) %>
 
 </td>
+
 -->
+
+
 
 
 <td>
@@ -27,5 +30,12 @@
 <td>
 	<% product.ItemAttributes.forEach(function(item){ %>
 	<%= item.Department %>
+<%	}) %>
+</td>
+
+
+<td>
+<% product.MediumImage.forEach(function(img){ %>
+	<img src="<%= img.URL %>" >
 <%	}) %>
 </td>

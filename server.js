@@ -12,6 +12,7 @@ app.set('view engine', 'ejs');
 require('./services/amazonService.js')(app);
 
 server.listen(port);
+console.log('Server running at http://localhost:8080');
 
 
 

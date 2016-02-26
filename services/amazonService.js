@@ -106,8 +106,8 @@ var mapping = [{
 var products = [];
 
 var client = amazon.createClient({
-  awsId: "AKIAIFNJWZSUU3EKEXKQ",
-  awsSecret: "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",
+  awsId: "AKIAIXIOM3D4AWLR6KVQ",
+  awsSecret: "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",
   awsTag: "spi00-21"
 });
 
@@ -137,7 +137,7 @@ module.exports = function(app){
 		  responseGroup: 'ItemAttributes,Offers,Images'
 		}).then(function(results){
 			products = results;
-			console.log(results);
+			//console.log(results);
 			//console.log(products[0].OfferSummary.LowestNewPrice.Amount);
 			//console.log(products[0].OfferSummary.LowestNewPrice.CurrencyCode);	
 			//console.log(products[0].OfferSummary.LowestNewPrice.Amount);

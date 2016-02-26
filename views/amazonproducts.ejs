@@ -21,11 +21,13 @@
 
 <tr>
 <td><%= product.ASIN %></td>
+
 <td>
 <% product.MediumImage.forEach(function(img){ %>
-	<img src="<%= img.URL %>" >
+	<img src="<%= img.URL %>" >	
 <%	}) %>
 </td>
+
 
 
 
